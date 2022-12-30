@@ -1,6 +1,6 @@
 {
     "app": {
         "globalPrefix": "api",
-        "url": "http://localhost"
+        "url": "https://anime-runners-api.herokuapp.com"
     }
 }
