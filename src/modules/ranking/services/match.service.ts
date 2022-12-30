@@ -4,7 +4,7 @@ import { PrismaService } from '@core/services/prisma.service';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class MatchesService {
+export class MatchService {
 
     constructor(
         public readonly prisma: PrismaService

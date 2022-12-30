@@ -1,18 +1,18 @@
 import { CoreModule } from '@core/core.module';
 import { Module } from '@nestjs/common';
 
-import { MatchesService } from '@ranking/services/matches.service';
-import { MatchesController } from '@ranking/controllers/matches.controller';
+import { MatchService } from '@ranking/services/match.service';
+import { MatchController } from '@ranking/controllers/match.controller';
 
 @Module({
     imports: [
         CoreModule
     ],
     controllers: [
-        MatchesController
+        MatchController
     ],
     providers: [
-        MatchesService
+        MatchService
     ],
 })
 export class RankingModule {}

@@ -1,6 +1,6 @@
 import { ApiKeyAuthGuard } from '@core/guards/apikey.guard';
 import { MatchRequest } from '@ranking/requests/match.request';
-import { MatchesService } from '@ranking/services/matches.service';
+import { MatchService } from '@ranking/services/match.service';
 import { Controller, Post, Get, Query, DefaultValuePipe, ParseIntPipe } from '@nestjs/common';
 import { Body } from '@nestjs/common';
 import { ValidationPipe, UseGuards } from '@nestjs/common';
@@ -11,10 +11,10 @@ import { ApiBody, ApiQuery, ApiHeader, ApiOperation, ApiTags } from '@nestjs/swa
 
 @ApiTags('Matches')
 @Controller("matches")
-export class MatchesController {
+export class MatchController {
 
     constructor(
-        public service: MatchesService
+        public service: MatchService
     ) { }
 
     @Post('/register-match')
