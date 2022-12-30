@@ -9,8 +9,8 @@ import { MatchResponse } from '@ranking/response/match.response';
 import { ApiResponse } from '@nestjs/swagger';
 import { ApiBody, ApiQuery, ApiHeader, ApiOperation, ApiTags } from '@nestjs/swagger';
 
-@ApiTags('Matches')
-@Controller("matches")
+@ApiTags('Match')
+@Controller("match")
 export class MatchController {
 
     constructor(
