@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator dbml {
+  output              = "./"
+  provider            = "prisma-dbml-generator"
+  projectDatabaseType = "SQLite"
+  projectName         = "anime-runners"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./anime-runners.db"
+}
+
+// Models
+model Matches {
+  id                  Int      @id @default(autoincrement())
+  username            String
+  miliseconds_reached BigInt
+  created_at          DateTime @default(now())
+
+  @@map("matches")
+}

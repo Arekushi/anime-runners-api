@@ -1,0 +1,15 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Project "anime-runners" {
+  database_type: 'SQLite'
+  Note: ''
+}
+
+Table matches {
+  id Int [pk, increment]
+  username String [not null]
+  miliseconds_reached BigInt [not null]
+  created_at DateTime [default: `now()`, not null]
+}
