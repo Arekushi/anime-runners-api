@@ -11,7 +11,7 @@ export class MatchesService {
     ) { }
 
     async postMatch(match: MatchRequest): Promise<void> {
-        await this.prisma.matches.create({
+        await this.prisma.match.create({
             data: {
                 miliseconds_reached: match.miliseconds_reached,
                 username: match.username
@@ -20,7 +20,7 @@ export class MatchesService {
     }
 
     async getTop(limit: number): Promise<MatchResponse[]> {
-        const matches = await this.prisma.matches.findMany({
+        const matches = await this.prisma.match.findMany({
             take: limit,
             orderBy: [
                 {

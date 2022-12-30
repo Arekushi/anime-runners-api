@@ -18,11 +18,11 @@ datasource db {
 }
 
 // Models
-model Matches {
+model Match {
   id                  Int      @id @default(autoincrement())
   username            String
   miliseconds_reached BigInt
   created_at          DateTime @default(now())
 
-  @@map("matches")
+  @@map("match")
 }
