@@ -1,3 +1,4 @@
+import { AppController } from '@src/app.controller';
 import { CoreModule } from '@core/core.module';
 import { RankingModule } from '@ranking/ranking.module';
 import { Module } from '@nestjs/common';
@@ -14,7 +15,7 @@ const ENV = process.env.NODE_ENV;
             envFilePath: !ENV ? '.env' : `.env.${ENV}`,
         }),
     ],
-    controllers: [],
+    controllers: [AppController],
     providers: [],
 })
 export class AppModule {}
