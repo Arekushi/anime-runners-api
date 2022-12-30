@@ -1,3 +1,10 @@
 {
-    "app": {}
+    "app": {
+        "swagger": {
+            "title": "Anime Runner's API",
+            "route": "api",
+            "description": "API do jogo Anime Runner's.",
+            "version": "1.0"
+        }
+    }
 }

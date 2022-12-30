@@ -29,12 +29,14 @@
     "@nestjs/core": "^9.0.0",
     "@nestjs/passport": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/swagger": "^6.1.4",
     "@prisma/client": "^4.8.0",
     "app-root-path": "^3.1.0",
     "axios": "^1.2.2",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "config": "^3.3.8",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "dotenv-flow": "^3.2.0",
     "passport": "^0.6.0",
@@ -43,8 +45,7 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "to-boolean": "^1.0.0",
-    "cross-env": "^7.0.3"
+    "to-boolean": "^1.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
