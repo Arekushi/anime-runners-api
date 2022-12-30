@@ -35,6 +35,7 @@ For the use of the project, some prerequisites will be necessary.
 
 ```toml
 API_KEY="key"
+SWAGGER="TRUE"
 ```
 
 ### Installation
