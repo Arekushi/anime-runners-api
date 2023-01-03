@@ -1,11 +1,11 @@
 import { Type } from 'class-transformer';
-import { IsInt, IsNotEmpty } from 'class-validator';
+import { IsNotEmpty, IsNumber } from 'class-validator';
 
 export class MatchRequest {
     @IsNotEmpty()
     username: string;
 
     @Type(() => Number)
-    @IsInt()
+    @IsNumber()
     miliseconds_reached: number;
 }
