@@ -7,5 +7,5 @@ export class MatchRequest {
 
     @Type(() => Number)
     @IsNumber()
-    miliseconds_reached: number;
+    time_reached: number;
 }

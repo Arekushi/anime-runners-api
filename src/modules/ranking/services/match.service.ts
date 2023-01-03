@@ -13,7 +13,7 @@ export class MatchService {
     async postMatch(match: MatchRequest): Promise<void> {
         await this.prisma.match.create({
             data: {
-                miliseconds_reached: match.miliseconds_reached,
+                time_reached: match.time_reached,
                 username: match.username
             }
         })
@@ -24,7 +24,7 @@ export class MatchService {
             take: limit,
             orderBy: [
                 {
-                    miliseconds_reached: 'desc'
+                    time_reached: 'desc'
                 },
                 {
                     created_at: 'desc'
@@ -32,7 +32,7 @@ export class MatchService {
             ],
             select: {
                 created_at: true,
-                miliseconds_reached: true,
+                time_reached: true,
                 username: true
             }
         })
@@ -40,7 +40,7 @@ export class MatchService {
         return matches.map(m => {
             return {
                 created_at: m.created_at,
-                miliseconds_reached: Number(m.miliseconds_reached.toString()),
+                time_reached: Number(m.time_reached.toString()),
                 username: m.username
             }
         })

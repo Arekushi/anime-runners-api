@@ -33,7 +33,7 @@ export class MatchController {
                 description: 'JSON object just for testing',
                 value: {
                     username: "test_username",
-                    miliseconds_reached: 500
+                    time_reached: 35.4
                 } as MatchRequest
             }
         }

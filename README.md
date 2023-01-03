@@ -74,7 +74,7 @@ SWAGGER="TRUE"
   width="600"
   title="Simple Anime Runner's Schema"
   alt="Simple Anime Runner's Schema"
-  src="./prisma/schemas/2022-12-30_07-39.png">
+  src="./prisma/schemas/2023-01-03_12-07.png">
 </div>
 
 ## Acknowledgments

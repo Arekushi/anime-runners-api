@@ -10,6 +10,6 @@ Project "anime-runners" {
 Table match {
   id Int [pk, increment]
   username String [not null]
-  miliseconds_reached BigInt [not null]
+  time_reached Float [not null]
   created_at DateTime [default: `now()`, not null]
 }

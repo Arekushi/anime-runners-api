@@ -19,10 +19,10 @@ datasource db {
 
 // Models
 model Match {
-  id                  Int      @id @default(autoincrement())
-  username            String
-  miliseconds_reached BigInt
-  created_at          DateTime @default(now())
+  id           Int      @id @default(autoincrement())
+  username     String
+  time_reached Float
+  created_at   DateTime @default(now())
 
   @@map("match")
 }

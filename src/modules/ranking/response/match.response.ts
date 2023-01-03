@@ -1,5 +1,5 @@
 export interface MatchResponse {
     username: string;
-    miliseconds_reached: number;
+    time_reached: number;
     created_at: Date;
 }
