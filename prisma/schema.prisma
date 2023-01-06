@@ -8,13 +8,13 @@ generator client {
 generator dbml {
   output              = "./"
   provider            = "prisma-dbml-generator"
-  projectDatabaseType = "SQLite"
+  projectDatabaseType = "postgresql"
   projectName         = "anime-runners"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./anime-runners.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 // Models

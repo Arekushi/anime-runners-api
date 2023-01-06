@@ -19,7 +19,7 @@ export class MatchService {
         })
     }
 
-    async getTop(limit: number): Promise<MatchResponse[]> {
+    async getHiScores(limit: number): Promise<MatchResponse[]> {
         const matches = await this.prisma.match.findMany({
             take: limit,
             orderBy: [
@@ -39,7 +39,6 @@ export class MatchService {
 
         return matches.map(m => {
             return {
-                created_at: m.created_at,
                 time_reached: Number(m.time_reached.toString()),
                 username: m.username
             }

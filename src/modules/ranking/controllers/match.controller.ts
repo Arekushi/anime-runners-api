@@ -44,13 +44,13 @@ export class MatchController {
         await this.service.postMatch(match);
     }
 
-    @Get('/top')
-    @ApiOperation({ summary: 'Returns top matches' })
+    @Get('/hi-scores')
+    @ApiOperation({ summary: 'Returns hi-scores' })
     @ApiQuery({ name: 'limit', example: 10 })
-    @ApiResponse({ status: 200, description: 'Returned top matches' })
-    async getTop(
+    @ApiResponse({ status: 200, description: 'Returned hi-scores' })
+    async getHiScores(
         @Query('limit', new DefaultValuePipe(10), ParseIntPipe) limit: number
     ): Promise<MatchResponse[]> {
-        return await this.service.getTop(limit);
+        return await this.service.getHiScores(limit);
     }
 }
