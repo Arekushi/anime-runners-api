@@ -30,6 +30,7 @@ export class MatchService {
                     created_at: 'desc'
                 }
             ],
+            distinct: ['username'],
             select: {
                 created_at: true,
                 time_reached: true,
